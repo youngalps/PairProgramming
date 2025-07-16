@@ -1,0 +1,128 @@
+2024-07-16 08:00:00.001 INFO [realtime] WebSocket connection established: client_id=ws_001, ip=192.168.1.100
+2024-07-16 08:00:00.005 INFO [realtime] Client ws_001 subscribed to channel: user_notifications
+2024-07-16 08:00:00.012 INFO [realtime] WebSocket connection established: client_id=ws_002, ip=192.168.1.101
+2024-07-16 08:00:00.018 INFO [realtime] Client ws_002 subscribed to channel: order_updates
+2024-07-16 08:00:00.025 INFO [realtime] WebSocket connection established: client_id=ws_003, ip=192.168.1.102
+2024-07-16 08:00:00.031 INFO [realtime] Client ws_003 subscribed to channel: chat_room_general
+2024-07-16 08:00:00.045 INFO [realtime] Message queued: channel=user_notifications, message_id=msg_001
+2024-07-16 08:00:00.046 INFO [realtime] Message delivered to ws_001: msg_001 (latency: 1ms)
+2024-07-16 08:00:00.052 INFO [realtime] WebSocket connection established: client_id=ws_004, ip=192.168.1.103
+2024-07-16 08:00:00.058 INFO [realtime] Client ws_004 subscribed to channel: stock_prices
+2024-07-16 08:00:00.065 INFO [realtime] Message queued: channel=order_updates, message_id=msg_002
+2024-07-16 08:00:00.066 INFO [realtime] Message delivered to ws_002: msg_002 (latency: 1ms)
+2024-07-16 08:00:00.072 INFO [realtime] WebSocket connection established: client_id=ws_005, ip=192.168.1.104
+2024-07-16 08:00:00.078 INFO [realtime] Client ws_005 subscribed to channel: live_dashboard
+2024-07-16 08:00:00.085 INFO [realtime] Message queued: channel=chat_room_general, message_id=msg_003
+2024-07-16 08:00:00.086 INFO [realtime] Message delivered to ws_003: msg_003 (latency: 1ms)
+2024-07-16 08:00:00.092 INFO [realtime] WebSocket connection established: client_id=ws_006, ip=192.168.1.105
+2024-07-16 08:00:00.098 INFO [realtime] Client ws_006 subscribed to channel: alerts
+2024-07-16 08:00:00.105 INFO [realtime] Message queued: channel=stock_prices, message_id=msg_004
+2024-07-16 08:00:00.106 INFO [realtime] Message delivered to ws_004: msg_004 (latency: 1ms)
+2024-07-16 08:00:00.112 INFO [realtime] WebSocket connection established: client_id=ws_007, ip=192.168.1.106
+2024-07-16 08:00:00.118 INFO [realtime] Client ws_007 subscribed to channel: game_events
+2024-07-16 08:00:00.125 INFO [realtime] Message queued: channel=live_dashboard, message_id=msg_005
+2024-07-16 08:00:00.126 INFO [realtime] Message delivered to ws_005: msg_005 (latency: 1ms)
+2024-07-16 08:00:00.132 INFO [realtime] WebSocket connection established: client_id=ws_008, ip=192.168.1.107
+2024-07-16 08:00:00.138 INFO [realtime] Client ws_008 subscribed to channel: system_metrics
+2024-07-16 08:00:00.145 INFO [realtime] Message queued: channel=alerts, message_id=msg_006
+2024-07-16 08:00:00.146 INFO [realtime] Message delivered to ws_006: msg_006 (latency: 1ms)
+2024-07-16 08:00:00.152 INFO [realtime] WebSocket connection established: client_id=ws_009, ip=192.168.1.108
+2024-07-16 08:00:00.158 INFO [realtime] Client ws_009 subscribed to channel: trading_signals
+2024-07-16 08:00:00.165 INFO [realtime] Message queued: channel=game_events, message_id=msg_007
+2024-07-16 08:00:00.166 INFO [realtime] Message delivered to ws_007: msg_007 (latency: 1ms)
+2024-07-16 08:00:00.172 INFO [realtime] WebSocket connection established: client_id=ws_010, ip=192.168.1.109
+2024-07-16 08:00:00.178 INFO [realtime] Client ws_010 subscribed to channel: auction_updates
+2024-07-16 08:00:00.185 INFO [realtime] Message queued: channel=system_metrics, message_id=msg_008
+2024-07-16 08:00:00.186 INFO [realtime] Message delivered to ws_008: msg_008 (latency: 1ms)
+2024-07-16 08:00:00.192 WARN [realtime] Connection spike detected: 10 connections in 200ms
+2024-07-16 08:00:00.198 INFO [realtime] Rate limiting activated for IP range 192.168.1.0/24
+2024-07-16 08:00:00.205 INFO [realtime] Message queued: channel=trading_signals, message_id=msg_009
+2024-07-16 08:00:00.206 INFO [realtime] Message delivered to ws_009: msg_009 (latency: 1ms)
+2024-07-16 08:00:00.212 INFO [realtime] WebSocket connection attempt blocked: ip=192.168.1.110 (rate limited)
+2024-07-16 08:00:00.218 INFO [realtime] Message queued: channel=auction_updates, message_id=msg_010
+2024-07-16 08:00:00.219 INFO [realtime] Message delivered to ws_010: msg_010 (latency: 1ms)
+2024-07-16 08:00:00.225 ERROR [realtime] WebSocket connection lost: client_id=ws_001, reason=client_disconnect
+2024-07-16 08:00:00.231 INFO [realtime] Cleaning up subscriptions for ws_001
+2024-07-16 08:00:00.237 INFO [realtime] WebSocket connection established: client_id=ws_011, ip=192.168.1.111
+2024-07-16 08:00:00.243 INFO [realtime] Client ws_011 subscribed to channel: user_notifications
+2024-07-16 08:00:00.250 INFO [realtime] Message queued: channel=user_notifications, message_id=msg_011
+2024-07-16 08:00:00.251 INFO [realtime] Message delivered to ws_011: msg_011 (latency: 1ms)
+2024-07-16 08:00:00.257 INFO [realtime] Heartbeat sent to 9 active connections
+2024-07-16 08:00:00.263 INFO [realtime] Heartbeat responses received: 9/9
+2024-07-16 08:00:00.270 INFO [realtime] Message queued: channel=order_updates, message_id=msg_012
+2024-07-16 08:00:00.271 INFO [realtime] Message delivered to ws_002: msg_012 (latency: 1ms)
+2024-07-16 08:00:00.277 INFO [realtime] Message queued: channel=chat_room_general, message_id=msg_013
+2024-07-16 08:00:00.278 INFO [realtime] Message delivered to ws_003: msg_013 (latency: 1ms)
+2024-07-16 08:00:00.284 INFO [realtime] Message queued: channel=stock_prices, message_id=msg_014
+2024-07-16 08:00:00.285 INFO [realtime] Message delivered to ws_004: msg_014 (latency: 1ms)
+2024-07-16 08:00:00.291 INFO [realtime] Message queued: channel=live_dashboard, message_id=msg_015
+2024-07-16 08:00:00.292 INFO [realtime] Message delivered to ws_005: msg_015 (latency: 1ms)
+2024-07-16 08:00:00.298 INFO [realtime] Message queued: channel=alerts, message_id=msg_016
+2024-07-16 08:00:00.299 INFO [realtime] Message delivered to ws_006: msg_016 (latency: 1ms)
+2024-07-16 08:00:00.305 INFO [realtime] Message queued: channel=game_events, message_id=msg_017
+2024-07-16 08:00:00.306 INFO [realtime] Message delivered to ws_007: msg_017 (latency: 1ms)
+2024-07-16 08:00:00.312 INFO [realtime] Message queued: channel=system_metrics, message_id=msg_018
+2024-07-16 08:00:00.313 INFO [realtime] Message delivered to ws_008: msg_018 (latency: 1ms)
+2024-07-16 08:00:00.319 INFO [realtime] Message queued: channel=trading_signals, message_id=msg_019
+2024-07-16 08:00:00.320 INFO [realtime] Message delivered to ws_009: msg_019 (latency: 1ms)
+2024-07-16 08:00:00.326 INFO [realtime] Message queued: channel=auction_updates, message_id=msg_020
+2024-07-16 08:00:00.327 INFO [realtime] Message delivered to ws_010: msg_020 (latency: 1ms)
+2024-07-16 08:00:00.333 INFO [realtime] Message queued: channel=user_notifications, message_id=msg_021
+2024-07-16 08:00:00.334 INFO [realtime] Message delivered to ws_011: msg_021 (latency: 1ms)
+2024-07-16 08:00:00.340 ERROR [realtime] WebSocket connection lost: client_id=ws_002, reason=network_timeout
+2024-07-16 08:00:00.346 INFO [realtime] Cleaning up subscriptions for ws_002
+2024-07-16 08:00:00.352 INFO [realtime] WebSocket connection established: client_id=ws_012, ip=192.168.1.112
+2024-07-16 08:00:00.358 INFO [realtime] Client ws_012 subscribed to channel: order_updates
+2024-07-16 08:00:00.365 INFO [realtime] Message queued: channel=order_updates, message_id=msg_022
+2024-07-16 08:00:00.366 INFO [realtime] Message delivered to ws_012: msg_022 (latency: 1ms)
+2024-07-16 08:00:00.372 WARN [realtime] High message throughput detected: 1000 messages/second
+2024-07-16 08:00:00.378 INFO [realtime] Enabling message batching for performance
+2024-07-16 08:00:00.385 INFO [realtime] Message batch queued: channel=multiple, batch_size=5
+2024-07-16 08:00:00.386 INFO [realtime] Batch delivered to 5 clients (latency: 1ms)
+2024-07-16 08:00:00.392 INFO [realtime] Message batch queued: channel=multiple, batch_size=5
+2024-07-16 08:00:00.393 INFO [realtime] Batch delivered to 5 clients (latency: 1ms)
+2024-07-16 08:00:00.399 INFO [realtime] Message batch queued: channel=multiple, batch_size=5
+2024-07-16 08:00:00.400 INFO [realtime] Batch delivered to 5 clients (latency: 1ms)
+2024-07-16 08:00:00.406 ERROR [realtime] WebSocket connection lost: client_id=ws_003, reason=client_disconnect
+2024-07-16 08:00:00.412 INFO [realtime] Cleaning up subscriptions for ws_003
+2024-07-16 08:00:00.418 INFO [realtime] WebSocket connection established: client_id=ws_013, ip=192.168.1.113
+2024-07-16 08:00:00.424 INFO [realtime] Client ws_013 subscribed to channel: chat_room_general
+2024-07-16 08:00:00.431 INFO [realtime] Message queued: channel=chat_room_general, message_id=msg_023
+2024-07-16 08:00:00.432 INFO [realtime] Message delivered to ws_013: msg_023 (latency: 1ms)
+2024-07-16 08:00:00.438 INFO [realtime] Connection pool status: active=9, idle=1, max=100
+2024-07-16 08:00:00.445 INFO [realtime] Memory usage: 45MB (connections: 9)
+2024-07-16 08:00:00.451 INFO [realtime] Message queued: channel=stock_prices, message_id=msg_024
+2024-07-16 08:00:00.452 INFO [realtime] Message delivered to ws_004: msg_024 (latency: 1ms)
+2024-07-16 08:00:00.458 INFO [realtime] Message queued: channel=live_dashboard, message_id=msg_025
+2024-07-16 08:00:00.459 INFO [realtime] Message delivered to ws_005: msg_025 (latency: 1ms)
+2024-07-16 08:00:00.465 INFO [realtime] Message queued: channel=alerts, message_id=msg_026
+2024-07-16 08:00:00.466 INFO [realtime] Message delivered to ws_006: msg_026 (latency: 1ms)
+2024-07-16 08:00:00.472 INFO [realtime] Message queued: channel=game_events, message_id=msg_027
+2024-07-16 08:00:00.473 INFO [realtime] Message delivered to ws_007: msg_027 (latency: 1ms)
+2024-07-16 08:00:00.479 INFO [realtime] Message queued: channel=system_metrics, message_id=msg_028
+2024-07-16 08:00:00.480 INFO [realtime] Message delivered to ws_008: msg_028 (latency: 1ms)
+2024-07-16 08:00:00.486 INFO [realtime] Message queued: channel=trading_signals, message_id=msg_029
+2024-07-16 08:00:00.487 INFO [realtime] Message delivered to ws_009: msg_029 (latency: 1ms)
+2024-07-16 08:00:00.493 INFO [realtime] Message queued: channel=auction_updates, message_id=msg_030
+2024-07-16 08:00:00.494 INFO [realtime] Message delivered to ws_010: msg_030 (latency: 1ms)
+2024-07-16 08:00:00.500 INFO [realtime] Message queued: channel=user_notifications, message_id=msg_031
+2024-07-16 08:00:00.501 INFO [realtime] Message delivered to ws_011: msg_031 (latency: 1ms)
+2024-07-16 08:00:00.507 INFO [realtime] Message queued: channel=order_updates, message_id=msg_032
+2024-07-16 08:00:00.508 INFO [realtime] Message delivered to ws_012: msg_032 (latency: 1ms)
+2024-07-16 08:00:00.514 INFO [realtime] Message queued: channel=chat_room_general, message_id=msg_033
+2024-07-16 08:00:00.515 INFO [realtime] Message delivered to ws_013: msg_033 (latency: 1ms)
+2024-07-16 08:00:00.521 WARN [realtime] Message queue backlog detected: 150 messages pending
+2024-07-16 08:00:00.527 INFO [realtime] Scaling message workers: 5 -> 10
+2024-07-16 08:00:00.533 INFO [realtime] Message backlog cleared: 0 messages pending
+2024-07-16 08:00:00.540 INFO [realtime] Performance metrics: avg_latency=1.2ms, throughput=1500msg/s
+2024-07-16 08:00:00.546 INFO [realtime] Heartbeat sent to 9 active connections
+2024-07-16 08:00:00.552 INFO [realtime] Heartbeat responses received: 9/9
+2024-07-16 08:00:00.558 ERROR [realtime] WebSocket connection lost: client_id=ws_004, reason=network_timeout
+2024-07-16 08:00:00.564 INFO [realtime] Cleaning up subscriptions for ws_004
+2024-07-16 08:00:00.570 INFO [realtime] WebSocket connection established: client_id=ws_014, ip=192.168.1.114
+2024-07-16 08:00:00.576 INFO [realtime] Client ws_014 subscribed to channel: stock_prices
+2024-07-16 08:00:00.583 INFO [realtime] Message queued: channel=stock_prices, message_id=msg_034
+2024-07-16 08:00:00.584 INFO [realtime] Message delivered to ws_014: msg_034 (latency: 1ms)
+2024-07-16 08:00:00.590 INFO [realtime] System status: healthy, uptime=00:00:00.590
+2024-07-16 08:00:00.596 INFO [realtime] Connection summary: established=14, active=9, disconnected=5
+2024-07-16 08:00:00.602 

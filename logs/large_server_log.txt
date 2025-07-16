@@ -1,0 +1,110 @@
+2024-07-16 08:00:00 INFO [startup] Application server starting up - version 2.1.4
+2024-07-16 08:00:01 INFO [db] Database connection pool initialized - max_connections=200
+2024-07-16 08:00:02 INFO [cache] Redis cache connected - cluster_nodes=3
+2024-07-16 08:00:03 INFO [web] HTTP server listening on port 8080
+2024-07-16 08:00:04 INFO [web] HTTPS server listening on port 8443
+2024-07-16 08:00:05 INFO [metrics] Metrics collection started - endpoint=/metrics
+2024-07-16 08:00:10 INFO [web] GET /health - 200 - 5ms - user_id=system
+2024-07-16 08:00:15 INFO [web] GET /health - 200 - 3ms - user_id=system
+2024-07-16 08:00:20 INFO [web] GET /health - 200 - 4ms - user_id=system
+2024-07-16 08:00:25 INFO [web] GET /health - 200 - 2ms - user_id=system
+2024-07-16 08:00:30 INFO [web] GET /health - 200 - 6ms - user_id=system
+2024-07-16 08:00:35 INFO [web] GET /health - 200 - 3ms - user_id=system
+2024-07-16 08:00:40 INFO [web] GET /health - 200 - 4ms - user_id=system
+2024-07-16 08:00:45 INFO [web] GET /health - 200 - 5ms - user_id=system
+2024-07-16 08:00:50 INFO [web] GET /health - 200 - 3ms - user_id=system
+2024-07-16 08:00:55 INFO [web] GET /health - 200 - 4ms - user_id=system
+2024-07-16 08:01:00 INFO [web] GET /api/users/1001 - 200 - 45ms - user_id=1001
+2024-07-16 08:01:01 INFO [web] GET /api/users/1002 - 200 - 52ms - user_id=1002
+2024-07-16 08:01:02 INFO [web] GET /api/users/1003 - 200 - 38ms - user_id=1003
+2024-07-16 08:01:03 INFO [web] GET /api/users/1004 - 200 - 43ms - user_id=1004
+2024-07-16 08:01:04 INFO [web] GET /api/users/1005 - 200 - 56ms - user_id=1005
+2024-07-16 08:01:05 INFO [web] GET /api/users/1006 - 200 - 41ms - user_id=1006
+2024-07-16 08:01:06 INFO [web] GET /api/users/1007 - 200 - 48ms - user_id=1007
+2024-07-16 08:01:07 INFO [web] GET /api/users/1008 - 200 - 39ms - user_id=1008
+2024-07-16 08:01:08 INFO [web] GET /api/users/1009 - 200 - 44ms - user_id=1009
+2024-07-16 08:01:09 INFO [web] GET /api/users/1010 - 200 - 51ms - user_id=1010
+2024-07-16 08:01:10 DEBUG [cache] Cache hit for key: user_profile_1001
+2024-07-16 08:01:10 DEBUG [cache] Cache hit for key: user_profile_1002
+2024-07-16 08:01:10 DEBUG [cache] Cache hit for key: user_profile_1003
+2024-07-16 08:01:10 DEBUG [cache] Cache hit for key: user_profile_1004
+2024-07-16 08:01:10 DEBUG [cache] Cache hit for key: user_profile_1005
+2024-07-16 08:01:11 DEBUG [cache] Cache miss for key: user_profile_1006
+2024-07-16 08:01:11 DEBUG [cache] Cache miss for key: user_profile_1007
+2024-07-16 08:01:11 DEBUG [cache] Cache miss for key: user_profile_1008
+2024-07-16 08:01:11 DEBUG [cache] Cache miss for key: user_profile_1009
+2024-07-16 08:01:11 DEBUG [cache] Cache miss for key: user_profile_1010
+2024-07-16 08:01:12 INFO [db] Query: SELECT * FROM users WHERE id IN (1006,1007,1008,1009,1010) - 123ms
+2024-07-16 08:01:12 INFO [cache] Updated cache keys: user_profile_1006, user_profile_1007, user_profile_1008, user_profile_1009, user_profile_1010
+2024-07-16 08:01:15 INFO [web] POST /api/login - 200 - 234ms - user_id=1001 - ip=10.0.1.45
+2024-07-16 08:01:16 INFO [web] POST /api/login - 200 - 189ms - user_id=1002 - ip=10.0.1.67
+2024-07-16 08:01:17 INFO [web] POST /api/login - 200 - 198ms - user_id=1003 - ip=10.0.1.89
+2024-07-16 08:01:18 INFO [web] POST /api/login - 200 - 156ms - user_id=1004 - ip=10.0.1.123
+2024-07-16 08:01:19 INFO [web] POST /api/login - 200 - 167ms - user_id=1005 - ip=10.0.1.145
+2024-07-16 08:01:20 ERROR [auth] Failed login attempt - username=hacker - ip=192.168.1.100 - reason=invalid_credentials
+2024-07-16 08:01:21 ERROR [auth] Failed login attempt - username=admin - ip=192.168.1.100 - reason=invalid_credentials
+2024-07-16 08:01:22 ERROR [auth] Failed login attempt - username=root - ip=192.168.1.100 - reason=invalid_credentials
+2024-07-16 08:01:23 ERROR [auth] Failed login attempt - username=test - ip=192.168.1.100 - reason=invalid_credentials
+2024-07-16 08:01:24 ERROR [auth] Failed login attempt - username=user - ip=192.168.1.100 - reason=invalid_credentials
+2024-07-16 08:01:25 WARN [security] Brute force attack detected - ip=192.168.1.100 - attempts=5 - blocked=true
+2024-07-16 08:01:30 INFO [web] GET /api/dashboard - 200 - 1234ms - user_id=1001
+2024-07-16 08:01:31 INFO [web] GET /api/dashboard - 200 - 1189ms - user_id=1002
+2024-07-16 08:01:32 INFO [web] GET /api/dashboard - 200 - 1345ms - user_id=1003
+2024-07-16 08:01:33 INFO [web] GET /api/dashboard - 200 - 1567ms - user_id=1004
+2024-07-16 08:01:34 INFO [web] GET /api/dashboard - 200 - 1432ms - user_id=1005
+2024-07-16 08:01:35 WARN [performance] Slow query detected - query=SELECT * FROM orders WHERE user_id = 1001 - duration=2345ms
+2024-07-16 08:01:36 WARN [performance] Slow query detected - query=SELECT * FROM orders WHERE user_id = 1002 - duration=2123ms
+2024-07-16 08:01:37 WARN [performance] Slow query detected - query=SELECT * FROM orders WHERE user_id = 1003 - duration=2567ms
+2024-07-16 08:01:38 WARN [performance] Slow query detected - query=SELECT * FROM orders WHERE user_id = 1004 - duration=2789ms
+2024-07-16 08:01:39 WARN [performance] Slow query detected - query=SELECT * FROM orders WHERE user_id = 1005 - duration=2456ms
+2024-07-16 08:01:40 ERROR [db] Connection timeout - host=db-primary - timeout=5000ms
+2024-07-16 08:01:41 WARN [db] Failover to secondary database - host=db-secondary
+2024-07-16 08:01:42 INFO [db] Connection established - host=db-secondary - latency=45ms
+2024-07-16 08:01:45 INFO [web] GET /api/products?page=1 - 200 - 234ms - user_id=1001
+2024-07-16 08:01:46 INFO [web] GET /api/products?page=2 - 200 - 198ms - user_id=1002
+2024-07-16 08:01:47 INFO [web] GET /api/products?page=3 - 200 - 267ms - user_id=1003
+2024-07-16 08:01:48 INFO [web] GET /api/products?page=4 - 200 - 189ms - user_id=1004
+2024-07-16 08:01:49 INFO [web] GET /api/products?page=5 - 200 - 223ms - user_id=1005
+2024-07-16 08:01:50 INFO [web] GET /api/products?page=6 - 200 - 245ms - user_id=1006
+2024-07-16 08:01:51 INFO [web] GET /api/products?page=7 - 200 - 198ms - user_id=1007
+2024-07-16 08:01:52 INFO [web] GET /api/products?page=8 - 200 - 234ms - user_id=1008
+2024-07-16 08:01:53 INFO [web] GET /api/products?page=9 - 200 - 267ms - user_id=1009
+2024-07-16 08:01:54 INFO [web] GET /api/products?page=10 - 200 - 189ms - user_id=1010
+2024-07-16 08:01:55 DEBUG [metrics] Memory usage - heap=4.2GB - non_heap=1.8GB - total=6.0GB
+2024-07-16 08:01:56 DEBUG [metrics] CPU usage - user=45% - system=15% - idle=40%
+2024-07-16 08:01:57 DEBUG [metrics] Disk usage - /var/log=2.3GB - /var/data=45.6GB - /tmp=1.2GB
+2024-07-16 08:01:58 DEBUG [metrics] Network - rx=1.2MB/s - tx=850KB/s - connections=234
+2024-07-16 08:01:59 DEBUG [metrics] Database - active_connections=45 - idle_connections=155 - pool_size=200
+2024-07-16 08:02:00 INFO [web] POST /api/orders - 201 - 456ms - user_id=1001 - order_id=50001
+2024-07-16 08:02:01 INFO [web] POST /api/orders - 201 - 423ms - user_id=1002 - order_id=50002
+2024-07-16 08:02:02 INFO [web] POST /api/orders - 201 - 467ms - user_id=1003 - order_id=50003
+2024-07-16 08:02:03 INFO [web] POST /api/orders - 201 - 389ms - user_id=1004 - order_id=50004
+2024-07-16 08:02:04 INFO [web] POST /api/orders - 201 - 512ms - user_id=1005 - order_id=50005
+2024-07-16 08:02:05 INFO [payment] Processing payment - order_id=50001 - amount=$123.45 - method=credit_card
+2024-07-16 08:02:06 INFO [payment] Processing payment - order_id=50002 - amount=$67.89 - method=paypal
+2024-07-16 08:02:07 INFO [payment] Processing payment - order_id=50003 - amount=$234.56 - method=credit_card
+2024-07-16 08:02:08 INFO [payment] Processing payment - order_id=50004 - amount=$89.12 - method=apple_pay
+2024-07-16 08:02:09 INFO [payment] Processing payment - order_id=50005 - amount=$156.78 - method=credit_card
+2024-07-16 08:02:10 INFO [payment] Payment successful - order_id=50001 - transaction_id=tx_001
+2024-07-16 08:02:11 INFO [payment] Payment successful - order_id=50002 - transaction_id=tx_002
+2024-07-16 08:02:12 ERROR [payment] Payment failed - order_id=50003 - reason=insufficient_funds - decline_code=51
+2024-07-16 08:02:13 INFO [payment] Payment successful - order_id=50004 - transaction_id=tx_004
+2024-07-16 08:02:14 INFO [payment] Payment successful - order_id=50005 - transaction_id=tx_005
+2024-07-16 08:02:15 INFO [order] Order confirmed - order_id=50001 - status=confirmed
+2024-07-16 08:02:16 INFO [order] Order confirmed - order_id=50002 - status=confirmed
+2024-07-16 08:02:17 WARN [order] Order payment failed - order_id=50003 - status=payment_failed
+2024-07-16 08:02:18 INFO [order] Order confirmed - order_id=50004 - status=confirmed
+2024-07-16 08:02:19 INFO [order] Order confirmed - order_id=50005 - status=confirmed
+2024-07-16 08:02:20 INFO [inventory] Stock check - product_id=P001 - available=45 - reserved=5
+2024-07-16 08:02:21 INFO [inventory] Stock check - product_id=P002 - available=123 - reserved=12
+2024-07-16 08:02:22 INFO [inventory] Stock check - product_id=P003 - available=67 - reserved=8
+2024-07-16 08:02:23 WARN [inventory] Low stock alert - product_id=P004 - available=3 - threshold=10
+2024-07-16 08:02:24 INFO [inventory] Stock check - product_id=P005 - available=89 - reserved=15
+2024-07-16 08:02:25 INFO [shipping] Shipping label created - order_id=50001 - tracking=TR001
+2024-07-16 08:02:26 INFO [shipping] Shipping label created - order_id=50002 - tracking=TR002
+2024-07-16 08:02:27 INFO [shipping] Shipping label created - order_id=50004 - tracking=TR004
+2024-07-16 08:02:28 INFO [shipping] Shipping label created - order_id=50005 - tracking=TR005
+2024-07-16 08:02:29 INFO [email] Confirmation email sent - order_id=50001 - email=user1001@example.com
+2024-07-16 08:02:30 INFO [email] Confirmation email sent - order_id=50002 - email=user1002@example.com
+2024-07-16 08:02:31 ERROR [email] Email delivery failed - order_id=50004 - email=user1004@example.com - reason=bounce
+2024-07-16 08:02:32 INFO [email] Confirmation email sent - order_id=50005 - email=user1005@example.com
