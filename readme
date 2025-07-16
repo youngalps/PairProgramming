@@ -1,0 +1,68 @@
+Log Analyzer Project
+Build a command-line log analysis tool that can parse, filter, analyze, and report on server logs.
+Core Features
+Parsing & Data Handling
+
+Read log files from command line arguments
+Parse log entries into structured data (timestamp, level, component, message)
+Handle malformed log lines gracefully
+Process large files efficiently
+
+Filtering Capabilities
+
+Filter by log level (INFO, WARN, ERROR)
+Filter by component ([web], [db], [auth], etc.)
+Filter by time ranges (start/end timestamps)
+Support chaining multiple filters simultaneously
+
+Analysis & Statistics
+
+Count entries by level and component
+Calculate time-based statistics (entries per hour/minute)
+Identify response time patterns from web logs
+Find most common error messages
+
+Pattern Detection
+
+Detect failed login attempts (multiple failures from same IP)
+Identify slow queries/responses (configurable thresholds)
+Find security events (SQL injection attempts, rate limiting)
+Detect system health issues (high memory, CPU spikes)
+
+Output & Reporting
+
+Support multiple output formats (JSON, CSV, plain text)
+Create summary reports (error counts, response time stats, component health)
+Generate insights from detected patterns
+Export filtered results to files
+Identify potential issues worth alerting on
+
+Interface & Usability
+
+Comprehensive CLI with help text and examples
+Support chaining multiple operations in single command
+Configuration via command line flags
+Meaningful error messages and validation
+
+Extensibility
+
+Easy addition of new filters
+Support for custom output formats
+Plugin-style pattern detectors
+Configuration file support for complex setups
+
+Success Criteria
+Your tool should handle commands like:
+python log_analyzer.py server.log --level ERROR --component db --format json --output errors.json
+
+
+Development Rules
+
+    Use AI to understand concepts, not to write code
+    Implement however feels natural to you
+    Focus on clean, readable code
+    Test with the provided log file
+    Document your architectural decisions
+    if you are truly stuck you can ask the other for help.
+    If both cannot concede ai solutions can be used
+
